@@ -2,4 +2,4 @@
 Repo for assignments in Managing AI Course
 
 
-Adding a line as my first push
+Adding a line to showcase my git push
