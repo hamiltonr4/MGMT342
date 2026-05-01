@@ -3,101 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            background-color: #444;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav li {
-            margin: 0 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        button {
-            padding: 0.5rem 1rem;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
+    <!-- Decorative flowers -->
+    <div class="flower flower-1">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="8" fill="#d75f98"/>
+            <circle cx="50" cy="25" r="12" fill="#f0bad6"/>
+            <circle cx="75" cy="35" r="12" fill="#f0bad6"/>
+            <circle cx="75" cy="65" r="12" fill="#f0bad6"/>
+            <circle cx="50" cy="75" r="12" fill="#f0bad6"/>
+            <circle cx="25" cy="65" r="12" fill="#f0bad6"/>
+            <circle cx="25" cy="35" r="12" fill="#f0bad6"/>
+        </svg>
+    </div>
+    <div class="flower flower-2">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="8" fill="#d75f98"/>
+            <circle cx="50" cy="25" r="12" fill="#e77ca3"/>
+            <circle cx="75" cy="35" r="12" fill="#e77ca3"/>
+            <circle cx="75" cy="65" r="12" fill="#e77ca3"/>
+            <circle cx="50" cy="75" r="12" fill="#e77ca3"/>
+            <circle cx="25" cy="65" r="12" fill="#e77ca3"/>
+            <circle cx="25" cy="35" r="12" fill="#e77ca3"/>
+        </svg>
+    </div>
+    <div class="flower flower-3">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="8" fill="#d75f98"/>
+            <circle cx="50" cy="25" r="12" fill="#f0bad6"/>
+            <circle cx="75" cy="35" r="12" fill="#f0bad6"/>
+            <circle cx="75" cy="65" r="12" fill="#f0bad6"/>
+            <circle cx="50" cy="75" r="12" fill="#f0bad6"/>
+            <circle cx="25" cy="65" r="12" fill="#f0bad6"/>
+            <circle cx="25" cy="35" r="12" fill="#f0bad6"/>
+        </svg>
+    </div>
+    <div class="flower flower-4">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="8" fill="#d75f98"/>
+            <circle cx="50" cy="25" r="12" fill="#e77ca3"/>
+            <circle cx="75" cy="35" r="12" fill="#e77ca3"/>
+            <circle cx="75" cy="65" r="12" fill="#e77ca3"/>
+            <circle cx="50" cy="75" r="12" fill="#e77ca3"/>
+            <circle cx="25" cy="65" r="12" fill="#e77ca3"/>
+            <circle cx="25" cy="35" r="12" fill="#e77ca3"/>
+        </svg>
+    </div>
+    <div class="flower flower-5">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="8" fill="#d75f98"/>
+            <circle cx="50" cy="25" r="12" fill="#f0bad6"/>
+            <circle cx="75" cy="35" r="12" fill="#f0bad6"/>
+            <circle cx="75" cy="65" r="12" fill="#f0bad6"/>
+            <circle cx="50" cy="75" r="12" fill="#f0bad6"/>
+            <circle cx="25" cy="65" r="12" fill="#f0bad6"/>
+            <circle cx="25" cy="35" r="12" fill="#f0bad6"/>
+        </svg>
+    </div>
+    <div class="flower flower-6">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="8" fill="#d75f98"/>
+            <circle cx="50" cy="25" r="12" fill="#e77ca3"/>
+            <circle cx="75" cy="35" r="12" fill="#e77ca3"/>
+            <circle cx="75" cy="65" r="12" fill="#e77ca3"/>
+            <circle cx="50" cy="75" r="12" fill="#e77ca3"/>
+            <circle cx="25" cy="65" r="12" fill="#e77ca3"/>
+            <circle cx="25" cy="35" r="12" fill="#e77ca3"/>
+        </svg>
+    </div>
+    
+        <div class="container">
+            <nav class="main-nav" aria-label="Primary navigation">
+                <a href="#home" class="active">Home</a>
+                <a href="recommendations.html">Rachel's Recommendations</a>
+                <a href="#Goals">Upcoming Goals</a>
+                <a href="#contact">Contact</a>
+                <button class="btn theme-toggle" id="theme-toggle">Toggle theme</button>
+            </nav>
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>A look into my life right now</h1>
+                        <a class="btn" href="recommendations.html">See Rachel's Recommendations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the homepage of my website. Welcome!</p>
-            <button id="changeTextBtn">Click me to change the text!</button>
-            <p id="dynamicText">This text will change when you click the button.</p>
+
+    <main class="container">
+        <section class="section-card">
+            <div class="image-row">
+                <img src="gradpic1.jpg" alt="Graduation photo 1">
+                <img src="gradpic2.jpg" alt="Graduation photo 2">
+            </div>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>Learn more about me and my project.</p>
+        <section id="home" class="section-card">
+            <h2>About Me!</h2>
+            <p>I'm Rachel Hamilton, a graduating senior at Xavier University. I want this site to serve as a time capsule of who I am and what I care about most as I'm about to close a huge chapter in my life. </p>
+            <div class="grid-columns">
+                <div class="info-card">
+                    <h3>My past</h3>
+                    <ul>
+                        <li>Born and raised in Louisville, Kentucky!</li>
+                        <li>Majored in Computer Science!</li>
+                        <li>With minors in Management, Mathematics, and Business Analytics!</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>(near) Future</h3>
+                    <ul>
+                        <li>Moving to Columbus, Ohio!</li>
+                        <li>Starting as Sr. Software Engineer at Nationwide! </li>
+                     </ul>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
+
+        <section id="Goals" class="section-card">
+            <div class="card">
+                <h2>Upcoming Goals</h2>
+                <ul>
+                    <li>Put in effort to excel in my upcoming career!</li>
+                    <li>Continue to grow my relationships and prepare for what life has to come!</li>
+                    <li>Make a positive impact wherever life takes me!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section-card">
+            <div class="card">
+                <h2>Contact</h2>
+                <p>Connect with me on Linkedin!</p>
+                <p>https://www.linkedin.com/in/racheldhamilton/</p>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 My Website</p>
+        <p>Thanks for a great semester!</p>
     </footer>
-    <script>
-        document.getElementById('changeTextBtn').addEventListener('click', function() {
-            document.getElementById('dynamicText').textContent = 'The text has changed!';
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
